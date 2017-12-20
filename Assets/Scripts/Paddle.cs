@@ -15,14 +15,8 @@ public class Paddle : MonoBehaviour {
 
 		float mousePosInBLocks = Input.mousePosition.x / Screen.width * 16;
 
-
-
-
-
-			paddlePos.x = Mathf.Clamp(mousePosInBLocks, 0.5f, 15.5f);
+		paddlePos.x = Mathf.Clamp(mousePosInBLocks, 0.5f, 15.5f);
 	
-
-
 		this.transform.position = paddlePos;
 
 	}
